@@ -1,0 +1,84 @@
+.filter {
+	cursor: pointer;
+	background: #FFFFFF;
+}
+
+.filter-absolute {
+	position: absolute;
+}
+
+.details-main:hover {
+	color: #EF5B70;
+}
+
+details:hover .filter-sort::after {
+	content: url("img/filter2.svg");
+}
+
+.details-main {
+	padding: 13px 15px 16px 17px;
+	box-sizing: border-box;
+}
+
+details[open] div {
+	animation: spoiler 0.5s;
+}
+
+details[open] ul {
+	animation: spoiler 0.5s;
+}
+
+.details-main[open] {
+	animation: spoiler 0.5s;
+	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.details-main[open] details {
+  animation: spoiler 0.5s;
+}
+
+@keyframes spoiler {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+details:hover .filter-sort::after {
+	content: url("img/filter2.svg");
+}
+
+.filter-sort {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.filter-sort::after {
+	content: url("img/filter.svg");
+	margin-left: 11px;
+}
+
+.details-in-filters {
+	margin-left: 17px;
+}
+
+.details-in-filters1 {
+	margin-top: 16px;
+}
+
+.details-in-filters2 {
+	margin-top: 24px;
+}
+
+.details-in-filters3 {
+	margin-top: 18px;
+}
+
+.filters-title {
+	font-size: 14px;
+	line-height: 17px;
+	color: #EF5B70;
+	border-left: 5px solid #EF5B70;
+	border-bottom: 1px solid #EBEBEB;
+	padding: 8px 0 11px 11px;
+}
+
